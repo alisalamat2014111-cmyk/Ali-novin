@@ -1,0 +1,435 @@
+# ALI NOVIN — MASTER DOCUMENT
+
+**Version:** 1.0.0
+**Status:** Build Baseline / Mother Document
+**Project:** Ali Novin — Real-Estate Intelligence System
+**Code phrase:** زنده باد علم
+**Date:** 2026-09-21
+
+## 0. Mission
+Ali Novin is an independent, explainable, evidence-driven real-estate intelligence system: not merely a chatbot, CRM, or advertising tool. It combines memory, market intelligence, property intelligence, customer intelligence, decision intelligence, action orchestration, and continuous learning.
+
+Core loop: **Data → Knowledge → Analysis → Decision → Action → Outcome → Learning**
+
+## 1. Product principles
+- General architecture must support personal use first and later multi-user/multi-office productization.
+- User data, private derived knowledge, public/anonymized knowledge, and software logic remain distinct.
+- The AI model is replaceable; memory, identity, history, provenance, decisions and knowledge belong to the system, not the model.
+- Accuracy, provenance, explainability and uncertainty outrank convenience.
+- Never silently guess missing data.
+- Historical states and decision paths are preserved.
+- Final decisions remain human-owned; the system may challenge them with evidence.
+
+## 2. Canonical entities
+Person, Customer, Owner, Agent, Office, Property, Listing, Interaction, Viewing, Offer, Negotiation, Transaction, Decision, Action, Outcome, Market Observation, Knowledge, Hypothesis, Evidence, Task, Event.
+
+## 3. Intelligence modules
+Core; Memory & Knowledge; Market Intelligence; Property Intelligence; Customer Intelligence; Matching; Valuation; Relationship; Transaction; Decision Lab; Experimentation; Knowledge; Self-Audit; Performance; Security/Governance; Marketing Intelligence; Multimodal Intake; Communication Gateway.
+
+## 4. Marketing Intelligence
+For every property/listing, choose a tailored marketing route using property data, price/terms, location, strengths/weaknesses, competitors, time-on-market, owner situation, likely buyer persona, history, channels and prior outcomes. Strategy outputs can include audience, message, visual angle, reel/script, copy, channels, timing, offer/pricing approach, conversion path, follow-up and metrics.
+
+**Core marketing rule:** no strategy is permanently accepted or rejected solely because it succeeded or failed before. Past outcomes must be decomposed into strategy, execution, market, audience, offer, price, timing, channel, owner constraints and external factors. A previously failed strategy may be recommended again only with an explicit explanation of what changed and why current evidence supports reconsideration.
+
+Marketing is sequential and measurable: preparation → publication → response → qualification → matching → call/message → viewing → offer → negotiation → outcome → learning. Vanity metrics do not equal business success.
+
+## 5. Multimodal Intelligence
+Images, floor plans, documents, spreadsheets, audio and video can be ingested and linked to entities. Visible features are observations, not automatically verified facts. OCR/extraction must preserve raw source, confidence and ambiguity. Batch office-photo intake: detect sheets → OCR → split → structure → identity/deduplicate → flag uncertainty → human confirmation → create/update records.
+
+## 6. Communication Gateway
+A provider-independent layer for SMS, WhatsApp, Telegram, Email and future channels. Every outbound communication records recipient, sender, channel, timestamp, content, status, response and attributable business outcome where available. Provider replacement must not affect system memory.
+
+## 7. Autonomy & Action Control — confirmed choice C
+Ali Novin uses risk-proportional autonomy. It determines whether an action should be a recommendation, draft, ready-to-execute action, conditional automation, or autonomous execution based on impact, scope, reversibility, sensitivity, error cost and confidence. Authority is visible, configurable, auditable and revocable.
+
+Low-impact examples: organize data, prepare drafts, find matching customers, produce reports. Higher-impact examples: mass messaging, price changes, financial/transaction changes, deletion and irreversible actions require stronger controls and/or human approval.
+
+Decision ≠ action ≠ execution ≠ outcome. Every important action has authorization, actor, time, execution status and reconciliation.
+
+## 8. Architecture stack baseline
+GitHub for source/version history; Vercel for application deployment; Supabase/PostgreSQL for database/auth/storage/realtime/RLS; external AI models as replaceable engines; external communication providers through adapters.
+
+## 9. Security & governance
+Least privilege, tenant isolation, audit trail, data minimization, purpose limitation, consent/authorization where required, backup/PITR, disaster recovery, quarantine for suspicious outputs, safe mode, staged rollout, regression testing, reproducibility and controlled change management.
+
+## 10. Mother-principle register
+The following register consolidates the confirmed architecture baseline. Titles are intentionally compact; the implementation specification must preserve the meaning of each principle.
+
+### 1. System goal: analytical brain of a real-estate agent, not merely assistant/CRM.
+### 2. Productization: separate general logic from private customer data; support future sale to agents/offices.
+### 3. Market-agnostic core with market-specific validated knowledge.
+### 4. Explainability: meaningful results expose data, reasoning, source/date and confidence.
+### 5. No hidden guessing; explicitly state insufficient data and required inputs.
+### 6. Accuracy over convenience; structure/validate natural-language input before final storage.
+### 7. Data ownership belongs to user; software logic belongs to Ali Novin; no unauthorized sharing.
+### 8. Independent thinking: challenge user with evidence; final decision remains user-owned.
+### 9. Historical memory: preserve important states, changes, calls, visits, offers and outcomes.
+### 10. Price types: asking/listing and actual transaction price both matter; actual transactions calibrate valuation.
+### 11. Learn from success and failure; qualitative feedback becomes testable hypotheses.
+### 12. Proactive risk warnings with evidence, source and confidence.
+### 13. Proactive opportunity detection with evidence, source and confidence.
+### 14. Action-oriented analysis: what happened, why, confidence, risk/opportunity and next action.
+### 15. Daily Intelligence briefing with urgent risks, opportunities, overdue follow-ups, matches and top actions.
+### 16. Multi-user/multi-office architecture with isolated datasets and roles.
+### 17. Separate physical Property from Listing/file/offer; owner/customer/transaction are separate entities.
+### 18. Transaction economics include timing, installments, deposits, checks, barter, debt and delivery terms.
+### 19. User expertise enters as hypotheses/domain knowledge, not automatic truth.
+### 20. Every data point has source and quality/confidence.
+### 21. Security/privacy/data governance with RBAC, history, audit and purpose limitation.
+### 22. Separate system analysis, user expertise and final decision; compare disagreements to outcomes.
+### 23. Discover new patterns beyond predefined rules; validate before promotion.
+### 24. General knowledge and market-specific knowledge are separated.
+### 25. Permanent market sensor plus structured user-entered observations.
+### 26. Relationship network across owners, properties, listings, buyers, agents, offices, clients and transactions.
+### 27. Full reconstructable timeline for properties, listings, clients and transactions.
+### 28. Semantic long-term memory for natural references and entity-linked context.
+### 29. Time-aware matching with stale needs and timestamped preferences.
+### 30. Dynamic behavioral lead quality/readiness; explainable, not a guarantee.
+### 31. Time value of money and real transaction economics.
+### 32. Scenario-based decisions with opportunity cost and uncertainty.
+### 33. Smart negotiation engine based on transactions, history, discounts, situations and competition.
+### 34. Learn from failures/errors by reconstructing recommendation, assumptions, outcome and causes.
+### 35. Version the brain: models, rules, assumptions, thresholds and indicators are dated/versioned.
+### 36. Experiment before trust: new patterns remain hypotheses until tested.
+### 37. Incomplete/contradictory data is preserved explicitly; no arbitrary reconciliation.
+### 38. Confidence grading with drivers.
+### 39. Market health/status indicators are measurable, temporal and explainable.
+### 40. Priority dashboard organized by next action, not chart volume.
+### 41. Smart follow-up/anti-forgetting engine.
+### 42. Integrated operational calendar with priorities and dependencies.
+### 43. Natural conversational input to structured backend with validation.
+### 44. Open architecture/connectors for files, CRM, website, calendar, communications, transactions and public sources.
+### 45. Semantic/compound search across entities, concepts, relationships, time and numbers.
+### 46. Automated periodic reports that remain traceable/versioned.
+### 47. Scientific self-performance mirror; correlation/causation separation.
+### 48. Real business economics: revenue, time, energy, ads, travel, ROI and opportunity cost.
+### 49. Self-audit/brain health across data, models, rules, assumptions and overconfidence.
+### 50. Decision-to-outcome learning loop.
+### 51. Knowledge library with discovery→hypothesis→experiment→validation→rule lifecycle.
+### 52. Information-value management: identify the next most useful missing datum.
+### 53. Negative data and non-occurrence are first-class evidence.
+### 54. Market-regime change detection without deleting history.
+### 55. Decision lab/scenario simulation with assumptions and uncertainty.
+### 56. Correlation vs plausible relation vs causality are explicitly separated.
+### 57. Multi-layer Source of Truth: raw→claim→verified→best current truth.
+### 58. Stable unique identity layer for entities.
+### 59. Evidence-based identity conflict resolution; reversible merges.
+### 60. Changes are independent data: old/new/time/source/actor/reason/verification.
+### 61. Temporal memory separates occurrence/validity time from recording/learning time.
+### 62. Fine-grained access by role, ownership, operation and context.
+### 63. Resilience, offline/degraded mode and secure sync.
+### 64. Versioned backup/PITR/disaster recovery with restore tests.
+### 65. Open data portability and vendor/AI-model independence.
+### 66. Privacy by design, minimization and purpose limitation.
+### 67. Modular Intelligence Architecture with replaceable modules.
+### 68. Data/Knowledge Gateway classifies facts, claims, observations, opinions, hypotheses, inferences, decisions, events, tasks and unknowns.
+### 69. Data lineage/provenance traces outputs to origins, models, logic, versions, filters and assumptions.
+### 70. Canonical ontology/data model independent of UI.
+### 71. Event Engine: meaningful events are timestamped and traceable.
+### 72. Rules Engine with experimental/active/weakened/retired lifecycle.
+### 73. Model Registry with identity, version, purpose, data, performance, limits and scope.
+### 74. Human-in-the-Loop according to risk.
+### 75. Event-driven architecture with ordering, idempotency, retry, replay and failure handling.
+### 76. Versioned formal data contracts between modules.
+### 77. System/data/analytical observability and health monitoring.
+### 78. Anomaly detection with baseline, sample, severity and confidence; not automatic causality.
+### 79. Relationship discovery through hypothesis→experiment→validation.
+### 80. Reasoning Engine decomposes complex problems into traceable stages.
+### 81. Queryable explainable memory for why/data/opposing evidence/what-if.
+### 82. Layered temporal memory with expiry/staleness.
+### 83. Truth Resolution Engine selects best current truth from evidence.
+### 84. External Data Gateway validates, normalizes, identifies, scores quality and preserves provenance.
+### 85. Independent Core/API architecture separate from UI and AI services.
+### 86. Fine-grained authorization by role/entity/ownership/context/operation with audit.
+### 87. Transactional integrity: atomicity, idempotency, outbox/saga, retry and reconciliation.
+### 88. Localization/internationalization for language, currency, units, calendars, time zones and local rules.
+### 89. True multi-tenancy with default cross-tenant denial.
+### 90. Feature/module product tiers on one core.
+### 91. Economics and cost per intelligence operation.
+### 92. AI orchestration/routing by task, complexity, sensitivity, cost, latency and confidence.
+### 93. Knowledge retrieval across text, semantic, structural, graph, temporal, numeric and market dimensions.
+### 94. Working memory/context management selecting relevant and valid context.
+### 95. Workflow/task orchestration with dependencies, retries and resume.
+### 96. Episodic/experience memory for full cases and outcomes.
+### 97. Causal/explanation analysis engine.
+### 98. Intelligence sandbox for safe experimentation.
+### 99. AI Constitution/principle hierarchy as governance layer.
+### 100. Intelligence observability/debuggability with execution traces.
+### 101. Scalability/resource management.
+### 102. Data standardization and QA while preserving raw data.
+### 103. Semantic contracts/shared vocabulary with versioning.
+### 104. Change governance and change management.
+### 105. Data lifecycle: create→validate→active→historical→archive→retention/anonymization→deletion.
+### 106. Document and multimodal intelligence.
+### 107. Natural-language and conversational intelligence.
+### 108. Ambiguity detection/resolution engine.
+### 109. Action authorization and execution control.
+### 110. Pre-action simulation/dry run.
+### 111. Dependency graph and impact analysis.
+### 112. External-source lifecycle and health management.
+### 113. Evaluation and regression harness.
+### 114. Test/golden/synthetic data management.
+### 115. Staged rollout and safe deployment.
+### 116. Version compatibility and evolution.
+### 117. Output quality gate.
+### 118. Alert intelligence and fatigue management.
+### 119. Knowledge obsolescence and revalidation.
+### 120. Contextual information importance/weighting.
+### 121. Temporal semantic drift and definition versioning.
+### 122. Uncertainty propagation and management.
+### 123. Event time and temporal ordering.
+### 124. Decision-to-impact chain tracking.
+### 125. Counterfactual analysis.
+### 126. Observer effect and system-induced feedback loops.
+### 127. Signal vs noise detection.
+### 128. Measurement/tool reliability.
+### 129. Observed/verified/derived/estimated/inferred/hypothetical data states.
+### 130. Outlier and exceptional-case management.
+### 131. Data bias and coverage management.
+### 132. Missing-data intelligence.
+### 133. Zero vs missing vs unknown vs N/A vs conflicting.
+### 134. Duplicate detection and resolution.
+### 135. Fact conflict resolution.
+### 136. Calculation lineage and reproducibility.
+### 137. Units/conversion/numerical precision.
+### 138. Confidence calibration and threshold governance.
+### 139. Bias management and recommendation balance.
+### 140. Cost/time/value of information management.
+### 141. Dependency and concentration risk management.
+### 142. External environment/exogenous factors.
+### 143. Multivariate interaction and market relationship analysis.
+### 144. Lagged and cascading effects.
+### 145. Change points and behavioral thresholds.
+### 146. Composition/mix-effect control.
+### 147. Sample selection and survivorship bias.
+### 148. Non-random missing-data management.
+### 149. Definition change vs real change.
+### 150. Context-conditioned behavior analysis.
+### 151. System feedback and intervention effect.
+### 152. Price vs liquidity effect.
+### 153. Nominal vs real value.
+### 154. Opportunity-cost analysis.
+### 155. Selection-effect management.
+### 156. Baseline and benchmarking.
+### 157. Seasonality and calendar effects.
+### 158. Transaction-terms normalization.
+### 159. Dynamic comparable weighting.
+### 160. Comparable validity screening.
+### 161. Sensitivity and stability analysis.
+### 162. Uncertainty attribution.
+### 163. Risk vs uncertainty.
+### 164. Risk-proportional decision making.
+### 165. Decision timing.
+### 166. Decision pressure and safeguards.
+### 167. Decision quality vs outcome.
+### 168. Attribution and luck control.
+### 169. Overfitting and generalization control.
+### 170. Evidence independence and double-counting control.
+### 171. Claim-specific evidence threshold.
+### 172. Pre-registration and question integrity.
+### 173. Data integrity and tamper detection.
+### 174. Controlled erasure and historical integrity.
+### 175. Structured unknowns.
+### 176. Adaptive explainability.
+### 177. Knowledge boundary and coverage map.
+### 178. Multi-objective trade-off management.
+### 179. Choice-set integrity.
+### 180. Non-action learning.
+### 181. Decision-appropriate precision.
+### 182. Uncertainty vs state volatility.
+### 183. Decision-time knowledge reconstruction.
+### 184. Data impact and error-propagation tracking.
+### 185. Observed vs latent variables.
+### 186. Metric integrity and Goodhart control.
+### 187. Decision ownership and accountability.
+### 188. Human override learning.
+### 189. Conflict of interest.
+### 190. Data correction learning.
+### 191. Information reliability profiles.
+### 192. Time/context-dependent source reliability.
+### 193. Scale and granularity integrity.
+### 194. Unit-of-analysis integrity.
+### 195. Aggregation integrity.
+### 196. Analytical ensemble and disagreement management.
+### 197. Preference and utility transparency.
+### 198. Missingness-as-information.
+### 199. Analysis stopping rule.
+### 200. Out-of-distribution detection.
+### 201. Problem-definition integrity.
+### 202. Question quality and reformulation.
+### 203. Epistemic abstention.
+### 204. Prediction/intervention separation.
+### 205. Multi-actor claim management.
+### 206. Historical utility preservation.
+### 207. Data-quality intervention tracking.
+### 208. Temporal causality integrity.
+### 209. Causal pathway decomposition.
+### 210. Interaction-effect integrity.
+### 211. Dynamic variable-role tracking.
+### 212. Decision-environment evolution.
+### 213. Multi-outcome decision tracking.
+### 214. Reversibility and irreversibility awareness.
+### 215. Asymmetric error-cost management.
+### 216. Minimum necessary control.
+### 217. Adaptive precision allocation.
+### 218. Intelligence resource prioritization.
+### 219. Safe refusal and alternative action.
+### 220. Authorization-before-reasoning/action.
+### 221. Untrusted input isolation.
+### 222. Controlled forgetting and memory invalidation.
+### 223. Point-in-time knowledge reconstruction.
+### 224. Execution-environment reproducibility.
+### 225. Internal trust verification.
+### 226. Fault isolation and graceful degradation.
+### 227. Error containment and downstream impact propagation.
+### 228. Memory–knowledge separation.
+### 229. Dynamic autonomy levels.
+### 230. User practice evolution.
+### 231. Market ontology evolution.
+### 232. Adversarial data/manipulation resistance.
+### 233. Self-confirmation and feedback-bias control.
+### 234. Goal-change detection and propagation.
+### 235. Question identity and analysis-scope tracking.
+### 236. Traceable abandonment.
+### 237. Dead-end and loop detection.
+### 238. Objective conflict detection.
+### 239. Policy–recommendation separation.
+### 240. Rule conflict detection and resolution.
+### 241. Expertise–evidence conflict management.
+### 242. Capability/competence drift detection.
+### 243. Expert escalation and human routing.
+### 244. Context-preserving handoff.
+### 245. Expert feedback integration.
+### 246. Dynamic human role tracking.
+### 247. Identity–role separation across organization and time.
+### 248. Model-independent memory.
+### 249. Persistent system identity.
+### 250. Identity and knowledge portability.
+### 251. Intelligence rollback and recovery.
+### 252. Identity–state separation.
+### 253. Identity and memory integrity verification.
+### 254. Semantic knowledge ownership.
+### 255. Personal-to-general learning boundary.
+### 256. Knowledge genealogy.
+### 257. Controlled knowledge retirement.
+### 258. Knowledge reactivation only after reassessment.
+### 259. Knowledge version coexistence.
+### 260. Phenomenon–measurement separation.
+### 261. Result reproducibility.
+### 262. Result evolution explanation.
+### 263. Belief revision traceability.
+### 264. Persistent unresolved disagreement.
+### 265. Explicit I-don't-know capability.
+### 266. Truth-over-consistency.
+### 267. Self-error learning.
+### 268. Error-layer attribution.
+### 269. Blameless learning.
+### 270. Error-learning threshold.
+### 271. Immediate containment vs root-cause correction.
+### 272. Trust degradation and safe mode.
+### 273. Controlled recovery from safe mode.
+### 274. Scoped failure and isolation.
+### 275. Error tolerance and escalation.
+### 276. Uncertainty–failure separation.
+### 277. Knowledge gap vs capability gap.
+### 278. Capability boundary awareness.
+### 279. Problem-state drift detection.
+### 280. Context drift detection.
+### 281. Decision-maker context drift.
+### 282. Goal–preference separation.
+### 283. Dynamic goal-conflict management.
+### 284. Decision rationale preservation.
+### 285. Decision criticality classification.
+### 286. Decision dependency and impact propagation.
+### 287. Decision validity conditions.
+### 288. Decision reversibility classification.
+### 289. Decision–action separation and verification.
+### 290. Expected–actual action reconciliation.
+### 291. Action effectiveness assessment.
+### 292. Action-effect attribution.
+### 293. Decision–action responsibility traceability.
+### 294. Conditional decision management.
+### 295. Multi-condition decision logic.
+### 296. Action prioritization under constraints.
+### 297. Resource-aware decision/action planning.
+### 298. Capacity opportunity cost.
+### 299. Decision sufficiency and analysis stop.
+### 300. Decision analysis cost governance.
+### 301. Decision-appropriate granularity.
+### 302. Speed–accuracy trade-off management.
+### 303. Decision review scheduling.
+### 304. Decision reopening conditions.
+### 305. Decision revision semantics.
+### 306. Parallel decision independence.
+### 307. Decision hierarchy and composition.
+### 308. Partial strategy outcome attribution.
+### 309. Action interaction effects.
+### 310. Threshold/nonlinear action effects.
+### 311. Action-effect lag management.
+### 312. Action-effect persistence and decay.
+### 313. Secondary and rebound effects.
+### 314. Multi-horizon action evaluation.
+### 315. Cumulative action effects.
+### 316. Cumulative error and drift detection.
+### 317. Cascading error detection and containment.
+### 318. Pre-propagation validation gate.
+### 319. Suspicious output quarantine.
+### 320. Quarantine dependency propagation.
+### 321. Latent error detection.
+### 322. Error temporal reconstruction.
+### 323. Error origin tracing.
+### 324. Error stage attribution.
+### 325. Shared error/common-cause detection.
+### 326. Evidence independence verification.
+### 327. Consensus–truth separation.
+### 328. Active disconfirmation search.
+### 329. Disconfirmation effort calibration.
+### 330. Incremental confidence updating.
+### 331. Belief-change threshold.
+### 332. Transient vs persistent belief change.
+### 333. Belief reversal and recovery.
+### 334. State reinstatement vs knowledge reassessment.
+### 335. Alternative hypothesis preservation.
+### 336. Hypothesis weight dynamics.
+### 337. Hypothesis conflict detection and management.
+### 338. Architecture completeness: the mother document is the canonical index of confirmed principles and must remain synchronized with implementation.
+### 339. Communication Gateway: provider-independent SMS/WhatsApp/Telegram/Email and future communication adapters.
+### 340. Communication History & Attribution: recipient, sender, channel, time, content, delivery, response and business outcome are traceable.
+### 341. Intelligent Outbound Communication: select suitable audience, channel and message from matching, customer state, property and goal; automation is permission-controlled.
+### 342. Communication Provider Independence: replacing a messaging provider cannot destroy memory, history, provenance or core logic.
+### 343. Autonomy & Action Control: risk-proportional autonomy with configurable levels, visible authority, auditability and revocation; confirmed user choice C.
+
+## 11. Operational rules for the build
+1. The master document is the architecture source of truth; changes are versioned, never silently overwritten.
+2. Implementation may evolve while preserving semantic commitments.
+3. New principles are appended/versioned and conflicts are surfaced rather than silently resolved.
+4. User-specific preferences are not generalized without authorization and evidence.
+5. Any real-world action uses the autonomy/action-control layer.
+6. Paid services are never activated or purchased without explicit user approval.
+7. AI-provider replacement must preserve system identity and memory.
+
+## 12. Initial build roadmap
+**Phase 1 — Foundation:** repo, app shell, auth, database schema, tenant/user model, audit, core API, master document.
+
+**Phase 2 — Intelligence Core:** canonical entities, ingestion gateway, provenance, memory, search, matching, valuation foundations, reasoning and output quality gate.
+
+**Phase 3 — Operations:** tasks, follow-ups, calendar, decisions/actions, communication gateway, SMS adapter, approval/autonomy controls.
+
+**Phase 4 — Marketing:** marketing intelligence, campaign history, attribution, strategy library, counterfactuals, ROI.
+
+**Phase 5 — Multimodal:** image/document/floorplan/OCR/batch office intake.
+
+**Phase 6 — Learning & Productization:** experiments, regression harness, market regime detection, multi-tenant product tiers, observability, portability.
+
+## 13. Non-negotiable quality gate
+Before an important result or action reaches the next stage, check provenance, freshness, confidence, contradictions, dependencies, permissions, scope and reversibility. Suspicious outputs are quarantined, not silently promoted.
+
+## 14. Project identity
+**Name:** علی نوین / Ali Novin
+
+**Philosophy:** علم، شواهد، حافظه، تصمیم، اقدام، یادگیری.
+
+**Code phrase:** زنده باد علم 🫡
+
+---
+**End of Master Document — v1.0.0**
