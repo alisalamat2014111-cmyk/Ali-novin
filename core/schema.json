@@ -1,0 +1,36 @@
+{
+  "project": "Ali Novin",
+  "version": "0.1.0",
+  "core_loop": [
+    "data",
+    "knowledge",
+    "analysis",
+    "decision",
+    "action",
+    "outcome",
+    "learning"
+  ],
+  "entities": [
+    "person",
+    "property",
+    "listing",
+    "interaction",
+    "viewing",
+    "offer",
+    "negotiation",
+    "transaction",
+    "decision",
+    "action",
+    "outcome",
+    "evidence",
+    "event"
+  ],
+  "principles": {
+    "model_independent_memory": true,
+    "provenance_required": true,
+    "historical_state_preservation": true,
+    "explainability_required": true,
+    "human_owned_decisions": true,
+    "auditability_required": true
+  }
+}
